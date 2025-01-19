@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="https://jakarta.ee/xml/ns/jakartaee" 
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee  
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" 
+         id="WebApp_ID" 
+         version="6.0">
+
+    <!-- Servlet Configuration -->
+    <servlet>
+        <servlet-name>demoServlet</servlet-name>
+        <servlet-class>com.kisho.demoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>demoServlet</servlet-name>
+        <url-pattern>/demoServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Uncomment the following section if additional servlets are required -->
+    <!--
+    <servlet>
+        <servlet-name>kishore</servlet-name>
+        <servlet-class>com.kisho.AddServlet</servlet-class>
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>sukesh</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>kishore</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>kishor</servlet-name>
+        <servlet-class>com.kisho.SecondServlet</servlet-class>
+        <init-param>
+            <param-name>name</param-name>
+            <param-value>sukesh</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>kishor</servlet-name>
+        <url-pattern>/sq</url-pattern>
+    </servlet-mapping>
+    -->
+
+    <!-- Context Parameter Example -->
+    <!-- Uncomment if required -->
+    <!--
+    <context-param>
+        <param-name>name</param-name>
+        <param-value>kishore</param-value>
+    </context-param>
+    -->
+</web-app>
